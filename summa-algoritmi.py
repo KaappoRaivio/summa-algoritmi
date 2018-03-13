@@ -35,4 +35,6 @@ def prettyPrint(mahdolliset):
 
 
 for i in range(100):
+    if not kolmioluku(i):
+        continue
     print('{}:\t{}\n'.format(i, prettyPrint(kolmioluku(i))))   # prettyprint tapa
