@@ -1,11 +1,5 @@
 import time
 
-def tulo(lista):
-    temp = 1
-    for i in lista:
-        temp *= i
-    return temp
-
 
 def kolmioluku(luku, aloituspiste=1):
     mahdolliset = []

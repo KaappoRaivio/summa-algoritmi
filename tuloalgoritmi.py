@@ -25,7 +25,7 @@ def kolmioluku(luku, aloituspiste=1):
 def prettyPrint(mahdolliset):
     master_temp = []
     for i in mahdolliset:
-        temp = ''
+        temp = ' = '
         for a in i:
             temp += str(a)
             temp += ' * '
@@ -44,4 +44,4 @@ for i in range(1000):
         alku = loppu
     if not kolmioluku(i):
         continue
-    print('{}:\t{}\n'.format(i, prettyPrint(kolmioluku(i))))   # prettyprint tapa
+    print('{}\t{}\n'.format(i, prettyPrint(kolmioluku(i))))   # prettyprint tapa
