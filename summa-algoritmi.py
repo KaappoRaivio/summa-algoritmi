@@ -1,5 +1,3 @@
-import time
-
 
 def kolmioluku(luku, aloituspiste=1):
     mahdolliset = []
@@ -26,16 +24,9 @@ def prettyPrint(mahdolliset):
         temp = temp[:len(temp) - 3]
         master_temp.append(temp)
     return '\n\t'.join(master_temp)
-    # return ','.join(master_temp)
 
-alku = time.time()
 
-for i in range(1000):
-    # print(i)
-    if i % 1000 == 0:
-        loppu = time.time()
-        print('\nAika / 1000 itemiä: {}\n\n'.format(loppu - alku))
-        alku = loppu
+for i in range(10000):
     if not kolmioluku(i):
         continue
-    print('{}:\t{}\n'.format(i, prettyPrint(kolmioluku(i))))   # prettyprint tapa
+    print('{}:\t{}\n'.format(i, prettyPrint(kolmioluku(i))))
