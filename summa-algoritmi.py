@@ -26,7 +26,7 @@ def prettyPrint(mahdolliset):
     return '\n\t'.join(master_temp)
 
 
-for i in range(10000):
+for i in range(100):
     if not kolmioluku(i):
         continue
     print('{}:\t{}\n'.format(i, prettyPrint(kolmioluku(i))))
